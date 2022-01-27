@@ -62,6 +62,7 @@ DELETE /api/Trails{id}
 | Distance from PDX | double | Returns any trail by distance from PDX |
 | Configuration | string | Returns any trail by trail configuration |
 | Season | string | Returns any trail by seasons that it is accessible |
+| Status | string | Returns the open/closed status of a trail |
 
 #### Example Query
 ```
@@ -81,7 +82,8 @@ http://localhost:5000/api/trails/?difficulty=easy&familyFriendly=yes&configurati
   "distanceFromPdx": 60.5,
   "latitude": 45.2672,
   "longitude": -121.7389,
-  "season": "Summer - Fall"
+  "season": "Summer - Fall",
+  "status": "Open"
 }
 ```
 
